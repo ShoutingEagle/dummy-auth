@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
+  height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  border: 5px solid rgb(66, 4, 124);
 }
 
-.App-link {
-  color: #61dafb;
+.form{
+  height: 400px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 1px 5px 5px 5px rgb(40, 2, 88);
+  border-radius: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.profile-container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  gap: 5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.user{
+  font-size: 35px;
+  font-weight: 700;
+  color: rgb(202, 109, 2);
+}
+
+.image img{
+  border: 15px solid rgb(53, 4, 53);
+}
+
+button{
+  font-size:1.5em;
+  padding: 8px 15px 8px 15px;
+  background-color: rgb(53, 4, 53);
+  color: aliceblue;
+  border: rgb(53, 4, 53);
+  cursor: pointer;
+}
+
+input{
+  height: 1.5em;
+  width: 16em;
+  border: 2px solid rgb(88, 1, 88);
+  color: rgb(39, 0, 39);
+  font-weight: 500;
+}
+
+.heading{
+  font-size: 25px;
+  font-weight: 700;
+  color: rgb(51, 1, 51);
+}
+
+.input-box{
+  display: flex;
+  gap: 10px;
+  
+}
+
+.input-box label{
+  font-weight: 500;
+  color: rgb(61, 1, 61);
 }
