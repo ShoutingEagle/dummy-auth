@@ -13,7 +13,7 @@ function Auth() {
   if(storedItems){
     console.log(' redirectering')
 
-     navigate('profile')
+     navigate('/profile')
      return;
    }
  })
@@ -38,7 +38,7 @@ function Auth() {
     .then(res => res.json())
     .then(data => {
       localStorage.setItem('userData',JSON.stringify({id : data.id , token :data.token}));
-      navigate('profile')
+      navigate('/profile')
     })
     .catch(error => {
       console.error('Error during login:', error);

@@ -7,7 +7,7 @@ function Profile() {
 
   const handleLogout = () => {
     localStorage.clear();
-    navigate('/')
+    navigate('/dummy-auth')
     
   }
 
